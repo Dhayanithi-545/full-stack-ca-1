@@ -32,7 +32,7 @@ const App = () => {
   return (
     <div className=' w-full bg-green-400 items-center align-center justify-center grid p-6 ' >
 
-      <h1 className='align-center items-center font-bold' > Service Listing - FSWD CA-1 </h1>
+      <h1 className='align-center items-center font-lg font-bold' > Service Listing - FSWD CA-1 </h1>
 
       <h1 className=' items-center align-center font-bold' >Giving data manually</h1>
       <Servicecard 
@@ -41,7 +41,7 @@ const App = () => {
        />
        <h1 className='font-bold' >   Using Map function to display all the data inside the array
        </h1>
-
+<div  className='p-6 md-4' >
         {
           data.map((data,index)=>(
             <div  >
@@ -49,6 +49,7 @@ const App = () => {
             </div>
           ))
         }
+        </div>
       <Servicecard 
         title="Marketing Agency" 
         description = "Our Marketing Agency specifically focuses the small scale business in rural areas, we offer specialised advertisements for those small scale business"
